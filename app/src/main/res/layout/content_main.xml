@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.guanjieshen.testapplication.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#ffffff">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout"
+        android:contextClickable="false"
+        android:background="#ffffff">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/frameLayout"
+            android:layout_alignRight="@+id/frameLayout"
+            android:layout_alignEnd="@+id/frameLayout">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton"
+                    android:layout_column="8"
+                    android:src="@drawable/button_inhaler"
+                    android:paddingRight="60dp"
+                    android:paddingLeft="45dp"
+                    android:adjustViewBounds="true"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:cropToPadding="false"
+                    android:background="#ffffff"
+                    android:clickable="true"
+                    android:paddingBottom="50dp"
+                    android:onClick="sendMessage"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton3"
+                    android:layout_column="25"
+                    android:src="@drawable/button_ear_drops"
+                    android:background="#ffffff"
+                    android:clickable="true" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton4"
+                    android:layout_column="8"
+                    android:src="@drawable/button_epi_pen"
+                    android:background="#ffffff"
+                    android:paddingBottom="50dp"
+                    android:paddingLeft="-10dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton5"
+                    android:layout_column="25"
+                    android:src="@drawable/button_eye_drops"
+                    android:background="#ffffff" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton6"
+                    android:layout_column="8"
+                    android:src="@drawable/button_nasal_spray"
+                    android:background="#ffffff"
+                    android:paddingLeft="-10dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton7"
+                    android:layout_column="25"
+                    android:src="@drawable/button_insulin_injection"
+                    android:background="#ffffff" />
+            </TableRow>
+        </TableLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

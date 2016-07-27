@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_inhalers">Inhalers</string>
+    <string name="title_activity_inhaler_menu">inhaler_menu</string>
+    <string name="title_activity_diskus">Diskus</string>
+</resources>
